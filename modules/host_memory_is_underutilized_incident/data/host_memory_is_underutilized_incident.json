@@ -7,11 +7,11 @@
       "value": ""
     },
     {
-      "name": "HOST_VM_NAME",
+      "name": "DECREASED_MEMORY_SIZE",
       "value": ""
     },
     {
-      "name": "DECREASED_MEMORY_SIZE",
+      "name": "HOST_VM_NAME",
       "value": ""
     },
     {
@@ -164,7 +164,7 @@
       "name": "cell_23",
       "type": "OP_LANG",
       "enabled": true,
-      "content": "host | host_name=$HOST_NAME | invoke_memory_status($CONFIGURED_AMOUNT_OF_MEMORY)"
+      "content": "host | host_name=$HOST_NAME | invoke_memory_analysis($CONFIGURED_AMOUNT_OF_MEMORY)"
     },
     {
       "name": "cell_24",
@@ -176,7 +176,7 @@
       "name": "cell_25",
       "type": "OP_LANG",
       "enabled": true,
-      "content": "host | host_name=$HOST_NAME | invoke_decrease_memory_allocation($HOST_VM_NAME, $DECREASED_MEMORY_SIZE)"
+      "content": "host | host_name=$HOST_NAME | invoke_decrease_vm_memory($DECREASED_MEMORY_SIZE, $HOST_VM_NAME)"
     }
   ]
 }
